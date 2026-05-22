@@ -20,4 +20,5 @@ WHERE
     job_postings.job_title_short = 'Data Analyst' AND
     job_postings.salary_year_avg IS NOT NULL
 GROUP BY skills.skills
-ORDER BY avg_salary DESC;
+ORDER BY avg_salary DESC
+LIMIT 20;
